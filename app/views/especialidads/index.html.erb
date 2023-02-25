@@ -4,11 +4,15 @@
 
 <div id="especialidads">
   <% @especialidads.each do |especialidad| %>
-    <%= render especialidad %>
-    <p>
-      <%= link_to "Show this especialidad", especialidad %>
-    </p>
+    <% if(especialidad.doctor_id == current_doctor.id )%>
+      <%= render especialidad %>
+      <p>
+        <%= link_to "Show", especialidad %>
+      </p>
+    <% end %>
+      
   <% end %>
 </div>
 
-<%= link_to "New especialidad", new_especialidad_path %>
+<%= link_to "Añadir especialidad", new_especialidad_path, class:"btnAnadir btn btn-primary" %>
+

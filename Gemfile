@@ -51,6 +51,9 @@ gem 'bootstrap', '~> 5.2', '>= 5.2.3'
 # jQuery
 gem 'jquery-rails'
 
+# Faker 
+gem 'faker', '~> 3.1', '>= 3.1.1'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

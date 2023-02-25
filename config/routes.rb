@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  resources :especialidads
-  resources :servicios
   devise_for :doctors
 
+  resources :especialidads
+  resources :servicios
+
+  
   root to: 'pages#home'
+
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

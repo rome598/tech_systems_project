@@ -13,11 +13,8 @@
 
   <div>
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-    <div>
-        <%= collection_select(:especialidad, :doctor_id, Doctor.all,
-        :id, :name, {}, { :multiple => false, :class => "form-select" }) %>
-      </div>
+    <%# form.text_field :name %>
+    <%= form.select :name, List.pluck(:name, :id) %>
   </div>
 
   <div>
@@ -25,6 +22,6 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-primary btnSubmit" %>
   </div>
 <% end %>

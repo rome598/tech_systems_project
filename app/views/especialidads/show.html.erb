@@ -3,8 +3,8 @@
 <%= render @especialidad %>
 
 <div>
-  <%= link_to "Edit this especialidad", edit_especialidad_path(@especialidad) %> |
-  <%= link_to "Back to especialidads", especialidads_path %>
+  <%= link_to "Edit", edit_especialidad_path(@especialidad) %> |
+  <%= link_to "Back", especialidads_path %>
 
-  <%= button_to "Destroy this especialidad", @especialidad, method: :delete %>
+  <%= button_to "Destroy", @especialidad, method: :delete, class:"btnD btn btn-danger" %>
 </div>
