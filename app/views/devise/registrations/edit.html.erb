@@ -15,12 +15,12 @@
 
   <div class="field">
     <%= f.label :apellido %><br />
-    <%= f.text_field :apellido %>
+    <%= f.text_field :apellido, autocomplete: "apellido" %>
   </div>
 
   <div class="field">
     <%= f.label :edad %><br />
-    <%= f.number_field :edad %>
+    <%= f.number_field :edad, autofocus: true, autocomplete: "edad" %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
