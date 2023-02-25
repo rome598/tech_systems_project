@@ -45,6 +45,12 @@ gem "bootsnap", require: false
 # Devise for registrations
 gem 'devise', '~> 4.9'
 
+# Bootstrap
+gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+
+# jQuery
+gem 'jquery-rails'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
