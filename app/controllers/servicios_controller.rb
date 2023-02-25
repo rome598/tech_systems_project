@@ -4,6 +4,12 @@ class ServiciosController < ApplicationController
   # GET /servicios or /servicios.json
   def index
     @servicios = Servicio.all
+    respond_to do |format|
+      format.html
+      format.json
+      format.pdf { render template: 'servicios/impreso' }
+    end
+
   end
 
   # GET /servicios/1 or /servicios/1.json
