@@ -57,7 +57,7 @@ gem 'faker', '~> 3.1', '>= 3.1.1'
 # Wicked PDF
 gem 'wicked_pdf', '~> 2.6', '>= 2.6.3'
 
-
+# Error al instalar wkhtmltopdf
 
 # Use Sass to process CSS
 # gem "sassc-rails"

@@ -7,17 +7,15 @@
 $(document).ready(function(){
     console.log("jQuery working...");
 
+    btn = '<%= link_to "Añadir especialidad", new_especialidad_path, class:"btnAnadir btn btn-primary" %>'
+
     $('.btnAnadir').on("click", function(){
-        //alert("alert!");
+        $('.btnAnadir').hide();
     });
 
     $('.btnSubmit').on("click", function(){
-        //alert("alert!");
+        $('.main').append(btn);
     });
-
-    // $("#btnSubmit").on("click", function(){
-    //     console.log("btnE se oculto");
-    // });
     
     // $(".btnD").on("click", function(){
     //     console.log("btnE se muestra");
