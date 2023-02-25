@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :servicios
   devise_for :doctors
 
   root to: 'pages#home'
