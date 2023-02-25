@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :especialidads
   resources :servicios
   devise_for :doctors
 
