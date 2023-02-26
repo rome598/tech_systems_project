@@ -15,3 +15,5 @@ Rails 7.0.4.2
 
 
 # Problemas con la gema wkhtmltopdf para la generacion de pdf..
+
+....
