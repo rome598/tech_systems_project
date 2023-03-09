@@ -13,7 +13,12 @@ ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
 
 Rails 7.0.4.2
 
+* Database: postgresql
 
-# Problemas con la gema wkhtmltopdf para la generacion de pdf..
+How to lunch?
 
-....
+  1. bundle i
+
+  2. rails db:setup
+
+  3. rails s
